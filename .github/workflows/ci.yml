@@ -25,5 +25,5 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Build and Test
-        run: ./mvnw clean test
+      - name: Build and Package
+        run: ./mvnw clean package
