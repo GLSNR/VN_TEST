@@ -27,3 +27,9 @@ jobs:
 
       - name: Build and Package
         run: ./mvnw clean package
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: spring-boot-jar
+          path: target/*.jar
