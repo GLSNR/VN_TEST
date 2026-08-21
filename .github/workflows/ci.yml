@@ -43,3 +43,6 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t ghcr.io/glsnr/spring-boot-app:latest .
+
+      - name: Push Docker Image
+        run: docker push ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/spring-boot-app:latest
