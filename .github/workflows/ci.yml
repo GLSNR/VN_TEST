@@ -33,3 +33,6 @@ jobs:
         with:
           name: spring-boot-jar
           path: target/*.jar
+
+      - name: Build Docker Image
+        run: docker build -t spring-boot-app .
